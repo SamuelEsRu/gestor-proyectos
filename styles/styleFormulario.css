@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    /* background-image: linear-gradient(to bottom , rgb(255, 255, 255), rgb(239, 151, 255)); */
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header h1{
+    padding: 20px 0;
+    background-color: rgb(51, 51, 51);
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 15px -4px black;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    color: white;
+    margin: 0 auto;
+   
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    border-bottom:  1px solid  rgb(174, 174, 174);
+    background-color: rgb(236, 236, 236);
+}
+nav a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+     
+}
+nav a:hover{
+   
+    background-color: rgb(174, 174, 174);
+    
+    
+}
+main{
+    max-width: 1100px;
+    padding-inline: 1rem;
+    margin: 0 auto;
+}
+
+form{
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgb(236, 236, 236);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+h2{
+    margin-bottom: 25px;
+}
+
+form input, form label, select{
+    
+    margin: -5px 0;
+
+}
+form input, .custom-file-upload, select, option{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.325);
+}
+
+select{
+    margin: 15px 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+  
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom-file-upload, input[type = "submit"] {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 15px;
+}
+
+.custom-file-upload:hover, input[type = "submit"]:hover {
+    background-color: rgb(62, 62, 62);
+}
+#confirmar:enabled{
+    background-color: rgb(78, 94, 219);
+}
+
+#confirmar:enabled:hover{
+    background-color: rgb(96, 110, 222);
+}
+
+#confirmar:disabled{
+    background-color: rgb(89, 89, 89);
+    color: grey;
+}
+
+form a{
+    text-decoration: none;
+    color:black;
+    margin: 20px 0 0 0;
+    
+}
+
+form a:hover{
+    color: rgb(101, 101, 101);
+}
+
+#previsualizarImagen{
+    width: 100%;
+    display:"flex";
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:10px 0;
+    
+
+}
+
+.error{
+    background-color: red;
+    color: white;
+    animation: desvanecer 10s forwards ease-in-out;
+    text-align: center;
+    padding: 1rem;
+}
+
+@keyframes desvanecer {
+    0%{opacity: 1;}
+    100%{opacity:0; }
+   
+}
+
+
+
+.inv{
+    display: none;
+    
+}

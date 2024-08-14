@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    /* background-image: linear-gradient(to bottom , rgb(255, 255, 255), rgb(239, 151, 255)); */
+    background-color: rgb(255, 255, 255);
+    
+}
+
+header h1{
+    padding: 20px 0;
+    background-color: rgb(51, 51, 51);
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 15px -4px black;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    color: white;
+    margin: 0 auto;
+    
+}
+
+
+main{
+    max-width: 1100px;
+    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+#usuario , .infoProyecto{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(205, 205, 205);
+}
+.infoProyecto{
+    width: 300px;
+    height: auto;
+}
+
+.ficha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom:1rem ;
+    color: white;
+   
+    
+}
+
+.ficha a{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 238);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+.contenedorTrabajador{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedorImagenPerfil{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius:1rem;
+    border:  1px solid rgba(0, 0, 0, 0.447);
+    
+}
+.contenedorImagenPerfil img{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+.datosTrabajador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border-left: 1px solid rgba(0, 0, 0, 0.412);
+    padding-inline:1rem ;
+}
+.datosTrabajador h4, .compProy{
+    font-size: 13px;
+    padding: 10px;
+    background-color: rgba(146, 146, 146, 0.353);
+    margin-bottom: 2px;
+    border-radius: 10px;
+    
+
+}
+.datosTrabajador a{
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+
+
+h2{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 25px;
+    
+    
+}
+h3{
+    border-bottom:  1px solid rgb(112, 112, 112);
+    margin-bottom: 5px;
+}
+
+.compProy p{
+   
+font-weight: bold;
+margin-bottom: 10px;
+
+}
+.compProy ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+.compProy img{
+    width: 140px;
+    height: 120px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    
+}
+
+.comp p{
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 2px;
+    /* border-top: 1px solid black;  */
+       
+}
+.compProy .comp{
+    width: auto;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    padding: 2px;
+    background-color: rgb(161, 161, 161);
+    text-align: center;
+    transition: 0.2s ease-in-out;
+   
+    
+}
+.compProy .coord{
+    background-color: rgb(68, 85, 214)
+}
+.compProy .comp:hover{
+
+    background-color: rgb(212, 212, 212);
+
+   
+    
+}
+.compProy .coord:hover{
+    background-color: rgb(103, 120, 255)
+}
+
+.datosTrabajador  .telefono{
+    background-color: rgba(25, 194, 70, 0.796);
+}
+.datosTrabajador .email{
+    background-color: rgba(0, 99, 153, 0.704);
+    word-break: break-word;
+}
+.datosTrabajador .teams{
+    background-color: rgba(128, 0, 128, 0.777);
+    
+}
+.datosTrabajador .telefono:hover,
+.datosTrabajador .email:hover,
+.datosTrabajador .teams:hover {
+    filter: brightness(1.2);
+}
+
+.novedadesProyecto{
+    
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+
+}
+
+.nov{
+    padding: 10px;
+    border-radius: 10px;
+}
+.nov:hover{
+    filter: contrast(200%)
+}
+.novedadBaja{
+    background-color: rgba(44, 242, 44, 0.73);
+}
+.novedadMedia{
+    background-color: rgba(242, 196, 44, 0.73);
+}
+.novedadUrgente{
+    background-color: rgba(242, 44, 44, 0.73);
+}
+
+.mensajeOK{
+    background-color: rgba(44, 242, 44, 0.73);
+    animation: desvanecer 10s forwards ease-in-out;
+    text-align: center;
+    padding: 1rem;
+}
+
+@keyframes desvanecer {
+    0%{opacity: 1;}
+    100%{opacity:0; }
+   
+}
+@media only screen and (max-width: 1000px) {
+    main{
+   
+        flex-direction: column;
+        
+    }
+
+    .infoProyecto{
+        width: auto;
+        
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    nav{
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .ficha{
+       flex-direction: column;
+       
+        
+    }
+
+    .contenedorTrabajador{
+        flex-direction: column;
+        align-items:center;
+       
+    }
+
+    .datosTrabajador{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        border-left: 0px solid rgba(0, 0, 0, 0.412);
+        padding-inline:0rem ;
+        
+    }
+    .contenedorImagenPerfil{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius:1rem;
+        border:  1px solid rgba(0, 0, 0, 0.447);
+        
+    }
+    .compProy ul{
+        /* flex-direction: column; */
+        justify-content: center;
+        
+       
+    }
+   
+ 
+    .compProy .comp {
+        width: 48%;
+      
+    
+
+    }
+
+    .compProy .comp img{
+        width: 100%;
+        height: 120px;
+        overflow: hidden;
+
+    }
+
+    .compProy img{
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        
+    }
+
+    
+  
+}
+
+@media only screen and (max-width: 400px) {
+   
+
+
+    .compProy ul{
+        /* flex-direction: column; */
+        justify-content: center;
+       
+    }
+   
+ 
+    .compProy .comp {
+        width: 100%;
+        
+
+    }
+
+    .compProy .comp img{
+        width: 100%;
+        height: 100px;
+        
+
+    }
+
+   
+  
+}
+
+

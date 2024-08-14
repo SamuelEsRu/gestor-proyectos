@@ -1,0 +1,44 @@
+header h1{
+    padding: 20px 0;
+    background-color: rgb(51, 51, 51);
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 15px -4px black;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    color: white;
+    margin: 0 auto;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+    border-bottom:  1px solid  rgb(174, 174, 174);
+    background-color: rgb(236, 236, 236);
+}
+nav a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    
+    
+    
+}
+nav a:hover{
+   
+    background-color: rgb(174, 174, 174);
+    
+    
+}
+
+
+@media only screen and (max-width: 650px) {
+    nav{
+        flex-direction: column; 
+    }
+
+
+
+   
+}
